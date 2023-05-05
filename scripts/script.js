@@ -120,17 +120,21 @@ class Room {
   calcSpace() {
     return console.log(this.height * this.width * this.length);
   }
-  showLight() {
-    if (this.light == true) {
-      return console.log("The light is on.");
+
+  switch() {
+    if (light == false) {
+      return light == true;
     } else {
-      return console.log("The light is off.");
+      return light == false;
     }
   }
+  // showLight() {
+  //   return console.log(`The light is ${switch()}`);
+  // }
 }
 
 const room = new Room(10, 3, 6);
 
 room.calcArea();
 room.calcSpace();
-room.showLight();
+room.switch();
